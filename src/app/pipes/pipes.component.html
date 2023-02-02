@@ -1,0 +1,23 @@
+<div class="server">
+    <p>Filter Servers by server STATUS</p>
+
+<div>
+    <input type="text" [(ngModel)]="status">
+</div>
+<br>
+<br>
+
+<div>
+    <ul>
+        <li class="list-item"
+        [ngClass]="{
+            'online':server.status==='online',
+            'ofline':server.status==='offline'
+        }"
+        *ngFor="let server of serverStatus | customPipe : status ">
+            <span class="badge">{{server.status}}</span>
+            {{server.name | uppercase}} | {{server.date}}
+        </li>
+    </ul>
+</div>
+</div>

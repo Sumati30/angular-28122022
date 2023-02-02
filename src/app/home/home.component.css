@@ -1,0 +1,14 @@
+.card {
+    margin: 15px;
+    height: 120px;
+    overflow: hidden;
+    text-align: center;
+    background-color:rgb(247, 172, 167);
+}
+
+.custom {
+    
+    font-size:large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}

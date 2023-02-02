@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-md-4">
+        <div class="card card-body">
+            <p>Attribute directive - <b>ngStyle</b> </p>
+        
+            <div>
+                <input [(ngModel)]="color" placeholder="{{color}}" />
+                <button (click)="size = size + 1">+</button>
+                <button (click)="size = size - 1">-</button>
+            </div>
+            <div>
+                <div [ngStyle]="{'color': color, 'font-size' : size + 'px'}">Hello! How are you ?</div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-body">
+            <p>Directives - <b>Custom directive</b> </p>
+        
+            <div class="courses">
+                <ul *ngFor="let course of courses" appCustomDirective>
+                    <li>{{course.title}} - {{course.category}}</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="card card-body">
+            <p>Attribute directive - <b>ngStyle</b> </p>
+        
+            <div>
+                <input [(ngModel)]="color" placeholder="{{color}}" />
+                <button (click)="size = size + 1">+</button>
+                <button (click)="size = size - 1">-</button>
+            </div>
+            <div>
+                <div [ngStyle]="{'color': color, 'font-size' : size + 'px'}">Hello! How are you ?</div>
+            </div>
+        
+        </div>
+
+    </div>
+</div>
+
